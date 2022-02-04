@@ -1,0 +1,89 @@
+body {
+  display: inline-grid;
+  place-items: center;
+  width: 100%;
+  font-family: "Merriweather", serif;
+}
+
+.simon {
+  position: relative;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+.buttonContainer {
+  display: inline-grid;
+  grid-gap: 10px;
+  grid-template-columns: auto auto;
+  transform: rotate(45deg);
+}
+
+.square {
+  border-radius: 5px;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.square:active,
+.active {
+  filter: brightness(125%);
+}
+
+.red {
+  background-color: #ee6352;
+}
+
+.blue {
+  background-color: #08b2e3;
+}
+
+.green {
+  background-color: #57a773;
+}
+
+.yellow {
+  background-color: #ffdf64;
+}
+
+#startButton {
+  width: 75px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  font-family: "Merriweather", serif;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #587792;
+  padding: 5px;
+}
+
+#startButton:disabled {
+  background-color: #eee;
+}
+
+.title {
+  width: min-content;
+}
+
+.winner {
+  animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.round {
+  position: relative;
+  margin-top: 60px;
+  padding: 10px;
+  border-radius: 5px;
+  right: -70px;
+}
